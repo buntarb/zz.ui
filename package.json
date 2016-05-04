@@ -1,6 +1,6 @@
 {
 	"name": "zz.ui",
-	"version": "20160503.0.0",
+	"version": "20160504.0.0",
 	"description": "Base UI module.",
 	"author": {
 		"name": "Artem Lytvynov",
@@ -14,6 +14,7 @@
 	},
 	"dependencies": {
 
-	    "imazzine-developer-kit": ""
+	    "imazzine-developer-kit": "",
+		"zz.ui.mdl": ""
 	}
 }
