@@ -1,0 +1,19 @@
+{
+	"name": "zz.ui",
+	"version": "20160503.0.0",
+	"description": "Base UI module.",
+	"author": {
+		"name": "Artem Lytvynov",
+		"email": "buntarb@gmail.com"
+	},
+	"license": "Apache-2.0",
+    "homepage": "http://imazzine.com/idl/zz.ui/",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/buntarb/zz.ui.git"
+	},
+	"dependencies": {
+
+	    "imazzine-developer-kit": ""
+	}
+}
