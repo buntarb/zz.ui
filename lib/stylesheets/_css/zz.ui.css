@@ -9624,8 +9624,20 @@ iframe.heightSet {
   font-weight: 400;
   src: local("Material Icons"), local("MaterialIcons-Regular"), url(/lib/resources/fonts/iconfont/MaterialIcons-Regular.woff2) format("woff2"); }
 
+@font-face {
+  font-family: 'FontAwesome';
+  src: local("FontAwesome"), url(/lib/resources/fonts/awesome/fontawesome-webfont.woff2) format("woff2"); }
+
 .material-icons {
-  font-family: 'Material Icons';
+  font-family: 'Material Icons'; }
+
+.awesome-icons {
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  color: rgba(0, 0, 0, 0.54); }
+
+.material-icons,
+.awesome-icons {
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -9638,3 +9650,42 @@ iframe.heightSet {
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased; }
+
+/**
+ * @fileoverview zz.ui stylesheets files for highlight effect.
+ * @license Apache-2.0
+ * @author Popkov.aleksander@gmail.com (Popkov Alexander)
+ */
+/**
+ * @fileoverview zz.ui stylesheets files with variables.
+ * @license Apache-2.0
+ * @author Popkov.aleksander@gmail.com (Popkov Alexander)
+ */
+.highlighted-element-container {
+  display: block;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden; }
+
+.highlight {
+  background: black;
+  border-radius: 50%;
+  height: 50px;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  overflow: hidden; }
+
+.highlight.is-animating {
+  transition: transform 0.3s cubic-bezier(0, 0, 0.2, 1), width 0.3s cubic-bezier(0, 0, 0.2, 1), height 0.3s cubic-bezier(0, 0, 0.2, 1), opacity 0.6s cubic-bezier(0, 0, 0.2, 1); }
+
+.highlight.is-visible {
+  opacity: 0.3; }

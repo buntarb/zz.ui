@@ -1,0 +1,10 @@
+/**
+ * @fileoverview zz.ui stylesheets files with variables.
+ * @license Apache-2.0
+ * @author Popkov.aleksander@gmail.com (Popkov Alexander)
+ */
+
+$color-black: "0,0,0";
+$color-light-contrast: $color-black !default;
+$highlight-bg-color: unquote("rgb(#{$color-light-contrast})") !default;
+$animation-curve-linear-out-slow-in: cubic-bezier(0, 0, 0.2, 1) !default;
