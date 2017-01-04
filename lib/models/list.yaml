@@ -49,9 +49,3 @@ FIELDS:
     index: 7
     type: zz.models.enums.FieldType.STRING
     required: false
-
-  action:
-
-      index: 8
-      type: zz.models.enums.FieldType.STRING
-      required: false
